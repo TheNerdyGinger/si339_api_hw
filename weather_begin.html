@@ -50,7 +50,7 @@
 
 		//request url
 		var YourWeatherAppID = "09873da1994fc576434a506bb54c915c"
-		let query = "http://api.openweathermap.org/data/2.5/weather?q="+location+ "&units="+ units + "&APPID=" +YourWeatherAppID;
+		let query = "https://api.openweathermap.org/data/2.5/weather?q="+location+ "&units="+ units + "&APPID=" +YourWeatherAppID;
     
 
         $.getJSON(query,function(json){
@@ -76,7 +76,7 @@
 				$("#temp").html(temp)
 				$("#high").html(high)
 				$("#low").html(low)
-				var icon_url = "http://openweathermap.org/img/wn/"+icon_id+"@2x.png"
+				var icon_url = "https://openweathermap.org/img/wn/"+icon_id+"@2x.png"
 				$("#tempImg").attr("src",icon_url);
 
 				//display the div now that we have data
